@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PhenocamPUCV</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+</head>
+    
+<body>
+<!-- codigo para el menu de navegación -->
+    <div class="navbar-fixed">
+        <nav class="teal accent-4">
+            <div class="nav-wrapper container teal accent-4">
+                <a href="#!" class="brand-logo">Phenocam</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Laboratorio</a></li>
+                    <li><a href="#">Camaras</a></li>
+                    <li><a href="#">Sensores</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Equipo<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">three</a></li>
+</ul>
+<ul id="dropdown2" class="dropdown-content">
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">three</a></li>
+</ul>
+<!-- Menu movil responsivo -->
+    <ul class="sidenav grey lighten-5" id="mobile-demo" >
+        <div class="row">
+            <div class="col s12">
+                <div class="card-panel grey lighten-3">
+                    <span class="flow-text">
+                        <i class="medium material-icons left">videocam</i>
+                        <h5>Logo</h1>
+                    </span>
+                </div>
+                
+            </div>
+        </div>
+        <li><a href="#">Laboratorio</a></li>
+        <li><a href="#">Camaras</a></li>
+        <li><a href="#">Sensores</a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Equipo<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+
+
+
+
+
+
+   <!--JavaScript at end of body for optimized loading-->
+   <script type="text/javascript" src="js/materialize.min.js"></script>
+   <script>
+       document.addEventListener('DOMContentLoaded', function(){
+           M.AutoInit();
+       });
+   </script>
+</body>
+</html> 

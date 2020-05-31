@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NavBar</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+</head>
+    
+<body>
+
+    <nav> <!-- navbar content here  --> </nav>
+
+    <ul class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                <img src="Images/Office.png">
+                </div>
+            <a href="#user"><img class="circle" src="Images/Office.png"></a>
+            <a href="#name"><span class="white-text name">Sebastian Bruna</span></a>
+            <a href="#email"><span class="white-text email">seb.bruna@gmail.com</span></a>
+            </div>
+        </li>
+      
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+      
+
+
+
+    
+   <!--JavaScript at end of body for optimized loading-->
+   <script type="text/javascript" src="js/materialize.min.js"></script>
+   <script>
+       document.addEventListener('DOMContentLoaded', function(){
+           var elems = document.querySelectorAll('.sidenav');
+           var instances = M.Sidenav.init(elems);
+       });
+
+   </script>
+</body>
+</html> 
