@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PhenocamPUCV</title>
+    <title>LABGRSphenocam</title>
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="PhenDashBoard.css">
 </head>
     
 <body>
+
 <!-- codigo para el menu de navegación -->
     <div class="navbar-fixed">
-        <nav class="teal accent-4">
-            <div class="nav-wrapper container teal accent-4">
-                <a href="#!" class="brand-logo">Phenocam</a>
+        <nav>
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo">Phenocam Dashboard</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Laboratorio</a></li>
-                    <li><a href="#">Camaras</a></li>
-                    <li><a href="#">Sensores</a></li>
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Equipo<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Contacts<i class="material-icons right">contacts</i></a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">User<i class="material-icons right">person</i></a></li>
                 </ul>
             </div>
         </nav>
@@ -32,19 +37,51 @@
 
     <!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content">
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
+    <li><a href="#!">user</a></li>
+    <li><a href="#!">login</a></li>
     <li class="divider"></li>
-    <li><a href="#!">three</a></li>
+    <li><a href="#!">logout</a></li>
 </ul>
 <ul id="dropdown2" class="dropdown-content">
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
+    <li><a href="#!">User</a></li>
+    <li><a href="#!">login</a></li>
     <li class="divider"></li>
-    <li><a href="#!">three</a></li>
+    <li><a href="#!">logout</a></li>
 </ul>
+<ul id="dropdown3" class="dropdown-content">
+    <li class="divider"></li>
+    <li><a href="#!">camera1</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">camera2</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">camera3</a></li>
+</ul>
+<ul id="dropdown4" class="dropdown-content">
+    <li class="divider"></li>
+    <li><a href="#!">sensor data 1</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">sensor data 2</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">sensor data 3</a></li>
+</ul>
+
+<ul class="sidenav sidenav-fixed bg" id="mobile-demo">
+    <li>
+        <div class="user-view">
+            <div class="background bg">
+                <!-- <img src="#" width="100%"> -->
+            </div>
+            <a href="#"><img src="profile.png" class="circle"></a>
+            <a href="#" class="white-text name">Phenocam User<i class="material-icons right">person</i></a>
+            <a href="#" class="white-text email">phenocam.pucv@gmail.com<i class="material-icons right">mail</i></a>
+        </div>	
+    </li>
+    <li><a class="dropdown-trigger" href="#" data-target="dropdown3" class="white-text"><i class="material-icons">linked_camera</i>Image</a></li>
+    <li><a class="dropdown-trigger" href="#" data-target="dropdown4" class="white-text"><i class="material-icons">insights</i>sensors data</a></li>
+</ul>
+
 <!-- Menu movil responsivo -->
-    <ul class="sidenav grey lighten-5" id="mobile-demo" >
+    <!-- <ul class="sidenav grey lighten-5" id="mobile-demo" >
         <div class="row">
             <div class="col s12">
                 <div class="card-panel grey lighten-3">
@@ -60,7 +97,7 @@
         <li><a href="#">Camaras</a></li>
         <li><a href="#">Sensores</a></li>
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Equipo<i class="material-icons right">arrow_drop_down</i></a></li>
-    </ul>
+    </ul> -->
 
 
 
